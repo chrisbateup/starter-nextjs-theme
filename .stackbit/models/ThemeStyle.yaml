@@ -19,546 +19,84 @@ fields:
         value: sans
       - label: Sans alt
         value: sansAlt
-  - type: object
+  - type: model
     name: h1
     label: H1
-    labelField: size
     group: text-styles
-    readOnly: true
-    fields:
-      - type: enum
-        name: size
-        label: Font size
-        options:
-          - label: XS
-            value: xs
-          - label: SM
-            value: sm
-          - label: Base
-            value: base
-          - label: LG
-            value: lg
-          - label: XL
-            value: xl
-          - label: 2XL
-            value: 2xl
-          - label: 3XL
-            value: 3xl
-          - label: 4XL
-            value: 4xl
-          - label: 5XL
-            value: 5xl
-          - label: 6XL
-            value: 6xl
-          - label: 7XL
-            value: 7xl
-          - label: 8XL
-            value: 8xl
-          - label: 9XL
-            value: 9xl
-        default: 5xl
-      - type: enum
-        name: weight
-        label: Font weight
-        controlType: button-group
-        options:
-          - label: Normal
-            value: normal
-          - label: Bold
-            value: bold
-        default: bold
-      - type: enum
-        name: decoration
-        label: Decoration
-        controlType: button-group
-        options:
-          - label: None
-            value: none
-          - label: Underline
-            value: underline
-          - label: Line through
-            value: line-through
-        default: none
-      - type: enum
-        name: case
-        label: Case
-        controlType: button-group
-        options:
-          - label: Default
-            value: none
-          - label: ag
-            value: lowercase
-          - label: Ag
-            value: capitalize
-          - label: AG
-            value: uppercase
-        default: none
-      - type: enum
-        name: letterSpacing
-        label: Letter spacing
-        controlType: button-group
-        options:
-          - label: Tighter
-            value: tighter
-          - label: Tight
-            value: tight
-          - label: Normal
-            value: normal
-          - label: Wide
-            value: wide
-          - label: Wider
-            value: wider
-        default: normal
-  - type: object
+    models:
+      - HeadingStyle
+    default:
+      type: HeadingStyle
+      fields:
+        - name: size
+          default: 5xl
+        - name: weight
+          default: bold
+  - type: model
     name: h2
     label: H2
-    labelField: size
     group: text-styles
-    readOnly: true
-    fields:
-      - type: enum
-        name: size
-        label: Font size
-        options:
-          - label: XS
-            value: xs
-          - label: SM
-            value: sm
-          - label: Base
-            value: base
-          - label: LG
-            value: lg
-          - label: XL
-            value: xl
-          - label: 2XL
-            value: 2xl
-          - label: 3XL
-            value: 3xl
-          - label: 4XL
-            value: 4xl
-          - label: 5XL
-            value: 5xl
-          - label: 6XL
-            value: 6xl
-          - label: 7XL
-            value: 7xl
-          - label: 8XL
-            value: 8xl
-          - label: 9XL
-            value: 9xl
-        default: 4xl
-      - type: enum
-        name: weight
-        label: Font weight
-        controlType: button-group
-        options:
-          - label: Normal
-            value: normal
-          - label: Bold
-            value: bold
-        default: bold
-      - type: enum
-        name: decoration
-        label: Decoration
-        controlType: button-group
-        options:
-          - label: None
-            value: none
-          - label: Underline
-            value: underline
-          - label: Line through
-            value: line-through
-        default: none
-      - type: enum
-        name: case
-        label: Case
-        controlType: button-group
-        options:
-          - label: Default
-            value: none
-          - label: ag
-            value: lowercase
-          - label: Ag
-            value: capitalize
-          - label: AG
-            value: uppercase
-        default: none
-      - type: enum
-        name: letterSpacing
-        label: Letter spacing
-        controlType: button-group
-        options:
-          - label: Tighter
-            value: tighter
-          - label: Tight
-            value: tight
-          - label: Normal
-            value: normal
-          - label: Wide
-            value: wide
-          - label: Wider
-            value: wider
-        default: normal
-  - type: object
+    models:
+      - HeadingStyle
+    default:
+      type: HeadingStyle
+      fields:
+        - name: size
+          default: 4xl
+        - name: weight
+          default: bold
+  - type: model
     name: h3
     label: H3
-    labelField: size
     group: text-styles
-    readOnly: true
-    fields:
-      - type: enum
-        name: size
-        label: Font size
-        options:
-          - label: XS
-            value: xs
-          - label: SM
-            value: sm
-          - label: Base
-            value: base
-          - label: LG
-            value: lg
-          - label: XL
-            value: xl
-          - label: 2XL
-            value: 2xl
-          - label: 3XL
-            value: 3xl
-          - label: 4XL
-            value: 4xl
-          - label: 5XL
-            value: 5xl
-          - label: 6XL
-            value: 6xl
-          - label: 7XL
-            value: 7xl
-          - label: 8XL
-            value: 8xl
-          - label: 9XL
-            value: 9xl
-        default: 3xl
-      - type: enum
-        name: weight
-        label: Font weight
-        controlType: button-group
-        options:
-          - label: Normal
-            value: normal
-          - label: Bold
-            value: bold
-        default: bold
-      - type: enum
-        name: decoration
-        label: Decoration
-        controlType: button-group
-        options:
-          - label: None
-            value: none
-          - label: Underline
-            value: underline
-          - label: Line through
-            value: line-through
-        default: none
-      - type: enum
-        name: case
-        label: Case
-        controlType: button-group
-        options:
-          - label: Default
-            value: none
-          - label: ag
-            value: lowercase
-          - label: Ag
-            value: capitalize
-          - label: AG
-            value: uppercase
-        default: none
-      - type: enum
-        name: letterSpacing
-        label: Letter spacing
-        controlType: button-group
-        options:
-          - label: Tighter
-            value: tighter
-          - label: Tight
-            value: tight
-          - label: Normal
-            value: normal
-          - label: Wide
-            value: wide
-          - label: Wider
-            value: wider
-        default: normal
-  - type: object
+    models:
+      - HeadingStyle
+    default:
+      type: HeadingStyle
+      fields:
+        - name: size
+          default: 3xl
+        - name: weight
+          default: bold
+  - type: model
     name: h4
     label: H4
-    labelField: size
     group: text-styles
-    readOnly: true
-    fields:
-      - type: enum
-        name: size
-        label: Font size
-        options:
-          - label: XS
-            value: xs
-          - label: SM
-            value: sm
-          - label: Base
-            value: base
-          - label: LG
-            value: lg
-          - label: XL
-            value: xl
-          - label: 2XL
-            value: 2xl
-          - label: 3XL
-            value: 3xl
-          - label: 4XL
-            value: 4xl
-          - label: 5XL
-            value: 5xl
-          - label: 6XL
-            value: 6xl
-          - label: 7XL
-            value: 7xl
-          - label: 8XL
-            value: 8xl
-          - label: 9XL
-            value: 9xl
-        default: 2xl
-      - type: enum
-        name: weight
-        label: Font weight
-        controlType: button-group
-        options:
-          - label: Normal
-            value: normal
-          - label: Bold
-            value: bold
-        default: bold
-      - type: enum
-        name: decoration
-        label: Decoration
-        controlType: button-group
-        options:
-          - label: None
-            value: none
-          - label: Underline
-            value: underline
-          - label: Line through
-            value: line-through
-        default: none
-      - type: enum
-        name: case
-        label: Case
-        controlType: button-group
-        options:
-          - label: Default
-            value: none
-          - label: ag
-            value: lowercase
-          - label: Ag
-            value: capitalize
-          - label: AG
-            value: uppercase
-        default: none
-      - type: enum
-        name: letterSpacing
-        label: Letter spacing
-        controlType: button-group
-        options:
-          - label: Tighter
-            value: tighter
-          - label: Tight
-            value: tight
-          - label: Normal
-            value: normal
-          - label: Wide
-            value: wide
-          - label: Wider
-            value: wider
-        default: normal
-  - type: object
+    models:
+      - HeadingStyle
+    default:
+      type: HeadingStyle
+      fields:
+        - name: size
+          default: 2xl
+        - name: weight
+          default: bold
+  - type: model
     name: h5
     label: H5
-    labelField: size
     group: text-styles
-    readOnly: true
-    fields:
-      - type: enum
-        name: size
-        label: Font size
-        options:
-          - label: XS
-            value: xs
-          - label: SM
-            value: sm
-          - label: Base
-            value: base
-          - label: LG
-            value: lg
-          - label: XL
-            value: xl
-          - label: 2XL
-            value: 2xl
-          - label: 3XL
-            value: 3xl
-          - label: 4XL
-            value: 4xl
-          - label: 5XL
-            value: 5xl
-          - label: 6XL
-            value: 6xl
-          - label: 7XL
-            value: 7xl
-          - label: 8XL
-            value: 8xl
-          - label: 9XL
-            value: 9xl
-        default: xl
-      - type: enum
-        name: weight
-        label: Font weight
-        controlType: button-group
-        options:
-          - label: Normal
-            value: normal
-          - label: Bold
-            value: bold
-        default: bold
-      - type: enum
-        name: decoration
-        label: Decoration
-        controlType: button-group
-        options:
-          - label: None
-            value: none
-          - label: Underline
-            value: underline
-          - label: Line through
-            value: line-through
-        default: none
-      - type: enum
-        name: case
-        label: Case
-        controlType: button-group
-        options:
-          - label: Default
-            value: none
-          - label: ag
-            value: lowercase
-          - label: Ag
-            value: capitalize
-          - label: AG
-            value: uppercase
-        default: none
-      - type: enum
-        name: letterSpacing
-        label: Letter spacing
-        controlType: button-group
-        options:
-          - label: Tighter
-            value: tighter
-          - label: Tight
-            value: tight
-          - label: Normal
-            value: normal
-          - label: Wide
-            value: wide
-          - label: Wider
-            value: wider
-        default: normal
-  - type: object
+    models:
+      - HeadingStyle
+    default:
+      type: HeadingStyle
+      fields:
+        - name: size
+          default: xl
+        - name: weight
+          default: bold
+  - type: model
     name: h6
     label: H6
-    labelField: size
     group: text-styles
-    readOnly: true
-    fields:
-      - type: enum
-        name: size
-        label: Font size
-        options:
-          - label: XS
-            value: xs
-          - label: SM
-            value: sm
-          - label: Base
-            value: base
-          - label: LG
-            value: lg
-          - label: XL
-            value: xl
-          - label: 2XL
-            value: 2xl
-          - label: 3XL
-            value: 3xl
-          - label: 4XL
-            value: 4xl
-          - label: 5XL
-            value: 5xl
-          - label: 6XL
-            value: 6xl
-          - label: 7XL
-            value: 7xl
-          - label: 8XL
-            value: 8xl
-          - label: 9XL
-            value: 9xl
-        default: lg
-      - type: enum
-        name: weight
-        label: Font weight
-        controlType: button-group
-        options:
-          - label: Normal
-            value: normal
-          - label: Bold
-            value: bold
-        default: bold
-      - type: enum
-        name: decoration
-        label: Decoration
-        controlType: button-group
-        options:
-          - label: None
-            value: none
-          - label: Underline
-            value: underline
-          - label: Line through
-            value: line-through
-        default: none
-      - type: enum
-        name: case
-        label: Case
-        controlType: button-group
-        options:
-          - label: Default
-            value: none
-          - label: ag
-            value: lowercase
-          - label: Ag
-            value: capitalize
-          - label: AG
-            value: uppercase
-        default: none
-      - type: enum
-        name: letterSpacing
-        label: Letter spacing
-        controlType: button-group
-        options:
-          - label: Tighter
-            value: tighter
-          - label: Tight
-            value: tight
-          - label: Normal
-            value: normal
-          - label: Wide
-            value: wide
-          - label: Wider
-            value: wider
-        default: normal
+    models:
+      - HeadingStyle
+    default:
+      type: HeadingStyle
+      fields:
+        - name: size
+          default: lg
+        - name: weight
+          default: bold
   - type: enum
     name: fontBody
     label: Font - body & captions
